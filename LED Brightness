@@ -1,0 +1,15 @@
+// LED Brightness
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System .in);
+        double d=sc.nextDouble();
+        if(d<=20){
+            System.out.println("Low");
+        }else if(d<=50){
+            System.out.println("Medium");
+        }else if(d>50){
+            System.out.println("High");
+        }
+    }
+}
