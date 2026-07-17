@@ -1,0 +1,22 @@
+\\ Calculating the output based on the input character
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        int i=sc.nextInt();
+        char ch=sc.next().charAt(0);
+        double res;
+        if(ch=='A'||ch=='a'){
+            res =i*2;
+            System.out.println( res);
+        }else if(ch=='B'||ch=='b'){
+            res =i*3;
+            System.out.println( res);
+        }else if(ch=='C'||ch=='c'){
+            res =i*4;
+            System.out.println(res);
+        }else{
+            System.out.println("Invalid input");
+        }
+    }
+}
