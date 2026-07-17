@@ -1,0 +1,28 @@
+// calculating the area of circle , cone,cylinder based on input
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int i= sc.nextInt();
+        double r,h,l;
+        double area;
+        if(i==1){
+             r= sc.nextDouble();
+            area=Math.PI*r*r;
+            System.out.printf("%.2f", area);
+        }else if(i==2){
+             r= sc.nextDouble();
+             h=sc.nextDouble();
+             l=Math.sqrt(r*r+h*h);
+            area=Math.PI*r*(r+l);
+            System.out.printf("%.2f", area);
+        }else if(i==3){
+            r=sc.nextDouble();
+            h=sc.nextDouble();
+            area=2*Math.PI*r*(r+h);
+            System.out.printf("%.2f", area);
+        }else{
+            System.out.printf("invalid input");
+        }
+    }
+}
