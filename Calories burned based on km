@@ -1,0 +1,17 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int km = sc.nextInt();
+        String surface = sc.next();
+        int calories=0;
+        if(surface.equalsIgnoreCase("Inclined")){
+            calories =( km/6);
+        }else if(surface.equalsIgnoreCase("Medium")){
+            calories =( km/5);
+        }else if(surface.equalsIgnoreCase("Declined")){
+            calories =( km/4);
+    }
+    System.out.println(calories+"calories");
+}
+}
