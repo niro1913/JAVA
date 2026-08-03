@@ -1,0 +1,16 @@
+//cheak wheather the number is divisible by 5 and 11
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    double i = sc.nextDouble();
+    if(i%5==0&&i%11==0)
+    System.out.println("Number divisible by both 5 and 11");
+    else if(i%11==0)
+    System.out.println("Number divisible by 11");
+    else if(i%5==0)
+    System.out.println("Number divisible by 5 ");
+    else
+    System.out.println("Invalid input");
+    }
+}
