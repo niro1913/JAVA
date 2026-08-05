@@ -1,0 +1,29 @@
+//Gross Salary Calculation
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int s = sc.nextInt();
+        double HRA,DA,GA;
+        if(s<=10000){
+            HRA=s*0.2;
+            DA=s*0.8;
+            GA=s+HRA+DA;
+            System.out.printf("%.2f",GA);
+        }
+            else if(s<=20000){
+            HRA=s*0.25;
+            DA=s*0.9;
+            GA=s+HRA+DA;
+            System.out.printf("%.2f",GA);
+            }
+            else if(s>20000){
+            HRA=s*0.3;
+            DA=s*0.95;
+            GA=s+HRA+DA;
+            System.out.printf("%.2f",GA);
+            
+        }
+    
+}
+}
