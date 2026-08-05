@@ -1,0 +1,17 @@
+
+import java.util.*;
+public class Main{
+    public static void  main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        float a=sc.nextFloat();
+        float b=sc.nextFloat();
+        int n1=(int)(a*1000);
+        int n2=(int)(b*1000);
+        if(n1==n2)
+        System.out.println("Same");
+        else
+        System.out.println("Different");
+        
+        
+    }
+}
