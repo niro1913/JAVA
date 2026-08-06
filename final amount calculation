@@ -1,0 +1,26 @@
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        double p = sc.nextInt();
+        double d,f;
+        if(p>5000){
+            d=p*0.2;
+            f=p-d;
+            System.out.printf("%.2f",f);
+            
+        } else if(p>=3000){
+            d=p*0.15;
+            f=p-d;
+            System.out.printf("%.2f",f);
+            
+        }else if(p>=1000){
+            d=p*0.1;
+            f=p-d;
+            System.out.printf("%.2f",f);
+    }else if(p<1000){
+            System.out.println(p);
+}
+}
+}
